@@ -17,5 +17,5 @@ jobs:
 
       - shell: pwsh
         run: Install-Module -Name AWS.Tools.CloudFormation -Force
-     
+      - run: pwsh -File Deploy.ps1
   
