@@ -13,7 +13,13 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Run a one-line script
-        run: pwsh -File generate_name.ps1
+        run: pwsh -File generate_readme.ps1
+      - uses: EndBug/add-and-commit@v7
+        with:
+          author_name: Geoffrey Muchugi
+          author_email: geoffreymuchugi@appsavvytalk.com
+          
+          
 
   build:
     needs: test
